@@ -2,277 +2,246 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Cheng Han Yu</title>
-
     <meta name="author" content="Cheng Han Yu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
+    <!-- Hover swap (no JS) -->
+    <style>
+      .hover-wrap{position:relative;overflow:hidden}
+      .hover-wrap img{display:block;width:100%;height:auto}
+      .hover-wrap .top{position:absolute;inset:0;opacity:0;transition:opacity .25s ease}
+      .hover-wrap:hover .top{opacity:1}
+      /* (Optional) tap-to-toggle on mobile: uncomment JS at bottom if needed */
+    </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Cheng Han Yu
-                </p>
-                <p>I am a first-year MS student in MAE at UC San Diego, with BS in Mechanical Engineering from NTHU. 
-
-                  I have 4 years experience in Formula Student, specializing in suspension design, vehicle dynamics, vibration analysis, and control.
-                  
-                  My main interests include automotive engineering, control systems and robotics.
-		            </p>
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:chy084@ucsd.edu"></a> &nbsp;/&nbsp;
-                  <a href="data/RESUME_cheng han yu.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/cheng-han-yu0968/">LinkedIn</a> &nbsp;/&nbsp;	
-                    <!-- Github</a> &nbsp;/&nbsp;
-                      Bio</a> &nbsp;/&nbsp;
-                    Scholar</a> &nbsp;/&nbsp; -->
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/ChengHanYu.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/ChengHanYu.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-
-      </tbody></table>
-           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-		<h2>Project Experience</h2>
-                <!--<p>-->
-                <!-- I'm specailized in mechanical design, control system, vehicle dynamics, robotics and utilized my skills in various project.-->
-                <!--</p>-->
-            <!--  </td>-->
-            <!--</tr>-->
-            		 </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='ever_image'>
-        					  <img src='images/robotics1.gif' width=100%>
-        					</div>
-                  <img src='images/robotics2.gif' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function ever_start() {
-                    document.getElementById('ever_image').style.opacity = "1";
-                  }
-        
-                  function ever_stop() {
-                    document.getElementById('ever_image').style.opacity = "0";
-                  }
-                  ever_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                  <strong><span class="papertitle">Autonomous Tower of Hanoi with a 4-DOF Robotic Arm</span></strong>
-                </a>
-                <br>
-        		National Tsing Hua University, 2024</a>
-                <br>
-        		<font color="red"><strong>(First Place Award)</strong></font>
-                <br>
-                project page</a>
-                /
- 
-                <p></p>
-                <p>
-                Developed a 4-DOF robotic arm controller that solves the Tower of Hanoi autonomously. The pipeline includes a ROS node graph for task planning and sequencing, a custom inverse-kinematics solver, and jerk-limited trajectory generation for smooth, collision-free motion. The optimized motion profiles reduced total solution time by ~50%, earning first place in the course final project.
-                </p>
-              </td>
-            </tr>
-            </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='ever_image'>
-        					  <img src='images/tv1.gif' width=100%>
-        					</div>
-                  <img src='images/tv2.png' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function ever_start() {
-                    document.getElementById('ever_image').style.opacity = "1";
-                  }
-        
-                  function ever_stop() {
-                    document.getElementById('ever_image').style.opacity = "0";
-                  }
-                  ever_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                  <strong><span class="papertitle">4WD EV race car yaw-moment–based torque-vectoring controller design</span></strong>
-                </a>
-                <br>
-        		<a href="https://www.nthuracing.com/en">NTHURacing TH07</a>, National Tsing Hua University, 2024</a>
-                <br>
-        		<!--<font color="red"><strong>(Honorable Mention)</strong></font>-->
-                <br>
-                <a href="data/Vehicle performance_chassis_ver1.pptx">project page</a>
-                /
-                <a href="https://www.youtube.com/watch?v=kVm8g41a7TE">video</a>
- 
-                <p></p>
-                <p>
-                Developed a yaw-moment–based torque-vectoring controller for a 4WD electric racecar. Fused IMU yaw rate, steering angle, and wheel-speed signals; used a bicycle model with tire model to compute desired yaw moment and allocate wheel torques in real time. Implemented in C/C++ (ECU loop ~1 kHz) with driver-selectable maps and safety interlocks, improving cornering by ~10% and contributing to P4 acceleration and P5 skidpad at FSCzech 2023.
-                </p>
-              </td>
-            </tr>
-
-    </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='ever_image'>
-        					  <img src='images/suspension1.png' width=100%>
-        					</div>
-                  <img src='images/suspension2.png' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function ever_start() {
-                    document.getElementById('ever_image').style.opacity = "1";
-                  }
-        
-                  function ever_stop() {
-                    document.getElementById('ever_image').style.opacity = "0";
-                  }
-                  ever_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                  <strong><span class="papertitle">Double Wishbone Suspension Design</span></strong>
-                </a>
-                <br>
-        		<a href="https://www.nthuracing.com/en">NTHURacing TH07</a>, National Tsing Hua University, 2023</a>
-                <br>
-        		<!--<font color="red"><strong>(Honorable Mention)</strong></font>-->
-                <br>
-                <a href="data/Vehicle performance_chassis_ver1.pptx">project page</a>
-                /
-                <a href="https://www.youtube.com/watch?v=kVm8g41a7TE">video</a>
- 
-                <p></p>
-                <p>
-                    Designed and manufactured a double-wishbone suspension with an integrated anti-roll bar for TH07, a 4WD electric racecar. Applied Design for Manufacturing in SolidWorks and used FEA to optimise the weight-to-stiffness ratio. Fitted a Pacejka (Magic Formula) tyre model for nonlinear characterisation to improve state estimation and controller tuning in track testing.
-                </p>
-              </td>
-            </tr>    
-        </tbody></table>
-           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-		<h2>Research</h2>
-            <!--    <p>-->
-            <!--     I'm specailized in mechanical design, control system, vehicle dynamics, robotics and utilized my skills in various project.-->
-            <!--    </p>-->
-            <!--  </td>-->
-            <!--</tr>-->
-    </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="ever_stop()" onmouseover="ever_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='ever_image'>
-        					  <img src='images/nonlinear1.png' width=100%>
-        					</div>
-                  <img src='images/nonlinear2.png' width=100%>
-                </div>
-                <script type="text/javascript">
-                  function ever_start() {
-                    document.getElementById('ever_image').style.opacity = "1";
-                  }
-        
-                  function ever_stop() {
-                    document.getElementById('ever_image').style.opacity = "0";
-                  }
-                  ever_stop()
-                </script>
-              </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">Nonlinearity Modification of CMOS-MEMS Resonators with Stress Concentration Structures</span>
-        </a>
-        <br>
-		<strong>Cheng-Han Yu</strong></a>,
-		Zhi-Qiang Lee</a>,
-		Meng-Hsuan Tien</a>,
-		Ming-Huang Li*</a>,
-        <br>
-        <a href="https://icss.org.tw/2024/include/index.php?Page=D-3"><em>ICSS</em>, 2024 &nbsp 
-		<!--<font color="red"><strong>(Honorable Mention)</strong></font>-->
-        <br>
-        <a href="data/ICSS_YU_Ver_simp.pdf">project page</a>
-        /
-        video</a>
-        /
-        arXiv</a>
-        <p></p>
-        <p>
-       Experimental study on modifying the geometric nonlinearity of micromechanical beam structures using stress concentration designs. Two types of CMOS-MEMS resonators, the cantilever and the fixed-fixed beam, were chosen for this study.
-        </p>
-      </td>
-    </tr>
-  </tbody></table>          
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-    <tr>
-      <td>
-        <h2>Professional Experience</h2>
-      </td>
-    </tr>
-  </tbody></table>
- <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    
-    <tr>
-
-      <td style="padding:20px;width:auto;vertical-align:middle"><img src="images/nthuracing.jpg" style="width: 100%; height: auto;" alt="NTHU Racing Logo"></td>
-      <td width="75%" valign="center">
-        Team Leader,<a href="https://www.nthuracing.com/en"> NTHURacing TH08</a>,2023/09 ~ 2024/08
-        </p>
-        Leader of Suspension, <a href="https://www.nthuracing.com/en">NTHURacing TH07</a>,2022/09 ~ 2023/08
-        </p>
-        Suspension Engineer,<a href="https://www.nthuracing.com/en"> NTHURacing TH05/TH06</a>,2020/10 ~ 2022/08
-        </p>
-        <br>
-      </td>
-    </tr>
-    </tbody></table>  
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+    <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
         <tr>
-          <td>
-            <h2>Miscellanea</h2>
+          <td style="padding:0;">
+            <!-- Header -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:2.5%;width:63%;vertical-align:middle">
+                    <p class="name" style="text-align:center;">Cheng Han Yu</p>
+                    <p>
+                      I am a first-year MS student in MAE at UC San Diego, with a BS in Mechanical Engineering from NTHU.
+                      I have 4 years of experience in Formula Student, specializing in suspension design, vehicle dynamics, vibration analysis, and control.
+                      My main interests include automotive engineering, control systems, and robotics.
+                    </p>
+                    <p style="text-align:center">
+                      <a href="mailto:chy084@ucsd.edu">Email</a> &nbsp;/&nbsp;
+                      <a href="data/RESUME_cheng han yu.pdf">CV</a> &nbsp;/&nbsp;
+                      <a href="https://www.linkedin.com/in/cheng-han-yu0968/">LinkedIn</a>
+                    </p>
+                  </td>
+                  <td style="padding:2.5%;width:40%;max-width:40%;">
+                    <a href="images/ChengHanYu.jpg">
+                      <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="Profile photo of Cheng Han Yu" src="images/ChengHanYu.jpg" class="hoverZoomLink">
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Project Experience -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Project Experience</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Project 1: Robotic Arm / Hanoi -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="hover-wrap">
+                      <img class="top" src="images/robotics1.gif" alt="Robotic arm move overlay">
+                      <img src="images/robotics2.gif" alt="Robotic arm baseline image">
+                    </div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <strong><span class="papertitle">Autonomous Tower of Hanoi with a 4-DOF Robotic Arm</span></strong><br>
+                    National Tsing Hua University, 2024<br>
+                    <span style="color:#c00;font-weight:700;">(First Place Award)</span><br>
+                    <!-- Add project/video links if available, e.g.:
+                    <a href="...">project page</a> / <a href="...">video</a>
+                    -->
+                    <p>
+                      Built an autonomous <em>Tower of Hanoi</em> solver on a 4-DOF robotic arm using ROS and Python. A custom inverse-kinematics solver and time-parameterized, jerk-limited trajectory generator execute the optimal move sequence with collision/singularity checks, homing, and grasp interlocks for reliability. Motion-profile optimization reduced total solution time by ~50%, earning first place in the course final project.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Project 2: Torque Vectoring -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="hover-wrap">
+                      <img class="top" src="images/tv1.gif" alt="Torque vectoring telemetry overlay">
+                      <img src="images/tv2.png" alt="Torque vectoring baseline plot">
+                    </div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <strong><span class="papertitle">4WD EV Racecar Yaw-Moment–Based Torque-Vectoring Controller Design</span></strong><br>
+                    <a href="https://www.nthuracing.com/en">NTHURacing TH07</a>, National Tsing Hua University, 2024<br>
+                    <a href="data/Vehicle performance_chassis_ver1.pptx">project page</a> /
+                    <a href="https://www.youtube.com/watch?v=kVm8g41a7TE">video</a>
+                    <p>
+                      Developed a yaw-moment–based torque-vectoring controller for a 4WD electric racecar. Fused IMU yaw rate, steering angle, and wheel-speed signals; used a bicycle model with a tire model to compute the desired yaw moment and allocate wheel torques in real time. Implemented in C/C++ (ECU loop ~1 kHz) with driver-selectable maps and safety interlocks, improving cornering by ~10% and contributing to P4 acceleration and P5 skidpad at FSCzech 2023.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Project 3: Suspension -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="hover-wrap">
+                      <img class="top" src="images/suspension1.png" alt="Suspension design overlay">
+                      <img src="images/suspension2.png" alt="Suspension design base">
+                    </div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <strong><span class="papertitle">Double Wishbone Suspension Design</span></strong><br>
+                    <a href="https://www.nthuracing.com/en">NTHURacing TH07</a>, National Tsing Hua University, 2023<br>
+                    <a href="data/Vehicle performance_chassis_ver1.pptx">project page</a> /
+                    <a href="https://www.youtube.com/watch?v=kVm8g41a7TE">video</a>
+                    <p>
+                      Designed and manufactured a double-wishbone suspension with an integrated anti-roll bar for TH07, a 4WD electric racecar. Applied Design for Manufacturing in SolidWorks and used FEA to optimize the weight-to-stiffness ratio. Fitted a Pacejka (Magic Formula) tire model for nonlinear characterization to improve state estimation and controller tuning in track testing.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Research -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Research</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="hover-wrap">
+                      <img class="top" src="images/nonlinear1.png" alt="MEMS nonlinearity overlay">
+                      <img src="images/nonlinear2.png" alt="MEMS nonlinearity base">
+                    </div>
+                  </td>
+                  <td style="padding:20px;width:75%;vertical-align:middle">
+                    <span class="papertitle">Nonlinearity Modification of CMOS-MEMS Resonators with Stress Concentration Structures</span><br>
+                    <strong>Cheng-Han Yu</strong>,
+                    Zhi-Qiang Lee,
+                    Meng-Hsuan Tien,
+                    Ming-Huang Li*<br>
+                    <a href="https://icss.org.tw/2024/include/index.php?Page=D-3"><em>ICSS</em>, 2024</a><br>
+                    <a href="data/ICSS_YU_Ver_simp.pdf">project page</a> /
+                    <!-- If you have video/arXiv links, add them like below -->
+                    <!-- <a href="...">video</a> / <a href="...">arXiv</a> -->
+                    <p>
+                      Experimental study on modifying the geometric nonlinearity of micromechanical beam structures using stress concentration designs. Two types of CMOS-MEMS resonators, the cantilever and the fixed-fixed beam, were chosen for this study.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Professional Experience -->
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td>
+                    <h2>Professional Experience</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:auto;vertical-align:middle">
+                    <img src="images/nthuracing.jpg" style="width:100%;height:auto;" alt="NTHU Racing Logo">
+                  </td>
+                  <td width="75%" valign="center">
+                    Team Leader, <a href="https://www.nthuracing.com/en">NTHURacing TH08</a>, 2023/09 ~ 2024/08<br>
+                    Leader of Suspension, <a href="https://www.nthuracing.com/en">NTHURacing TH07</a>, 2022/09 ~ 2023/08<br>
+                    Suspension Engineer, <a href="https://www.nthuracing.com/en">NTHURacing TH05/TH06</a>, 2020/10 ~ 2022/08
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Misc -->
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td>
+                    <h2>Miscellanea</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table width="100%" align="center" border="0" cellpadding="20">
+              <tbody></tbody>
+            </table>
+
+            <!-- Footer -->
+            <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:0;">
+                    <br>
+                    <p style="text-align:right;font-size:small;">
+                      Thanks to Jon Barron for this invaluable web source <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+                    </p>
+                    <p style="text-align:right;font-size:small;">
+                      <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website — use the GitHub code instead.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
           </td>
         </tr>
-      </tbody></table>
-      <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-            
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Thanks for Jon Barron for this invaluable web source <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. 
-		 </p>
-		<p style="text-align:right;font-size:small;"><strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
+      </tbody>
     </table>
+
+    <!-- (Optional) Enable tap-to-toggle for mobile hover -->
+    <!--
+    <script>
+      document.querySelectorAll('.hover-wrap').forEach(w=>{
+        w.addEventListener('click',()=>{
+          const t = w.querySelector('.top');
+          t.style.opacity = (t.style.opacity==='1') ? '0' : '1';
+        });
+      });
+    </script>
+    -->
   </body>
 </html>
