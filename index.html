@@ -37,8 +37,8 @@
                     <p style="text-align:center">
                       <a href="mailto:chy084@ucsd.edu">Email</a> &nbsp;/&nbsp;
                       <a href="data/RESUME_cheng han yu.pdf">CV</a> &nbsp;/&nbsp;
-                      <a href="https://www.linkedin.com/in/cheng-han-yu0968/">LinkedIn</a>
-                      <a href="https://github.com/michaelyuuu">Github</a>
+                      <a href="https://www.linkedin.com/in/cheng-han-yu0968/">LinkedIn</a> &nbsp;/&nbsp;
+                      <a href="https://github.com/michaelyuuu">Github</a> &nbsp;/&nbsp;
                     </p>
                   </td>
                   <td style="padding:2.5%;width:40%;max-width:40%;">
@@ -66,19 +66,21 @@
                 <tr>
                   <td style="padding:20px;width:25%;vertical-align:middle">
                     <div class="hover-wrap">
-                      <img class="top" src="images/estimated_panorama_11.png" alt="reconstructed panorama">
-                      <img src="images/optimized imu measurement.pngg" alt="optimized imu orientation">
+                      <img src="images/estimated paronama 11.png" alt="reconstructed panorama">
+                      <img class="top" src="images/optimized imu measurement.png" alt="optimized imu orientation">
                     </div>
                   </td>
                   <td style="padding:20px;width:75%;vertical-align:middle">
                     <strong><span class="papertitle">IMU Orientation Tracking and Panorama Reconstruction</span></strong><br>
                     University of California, San Diego, Feb 2026<br>
-                    <a href="data/Cheng Han Yu PR1 Report.pdf">project report</a>
+                    <a href="data/Cheng Han Yu PR1 Report.pdf">project report</a> /
+                    <a href="https://github.com/michaelyuuu/ECE-276A_Orientation-Tracking-and-Panorama-Reconstruction">project code</a>
+
                     <p>
                       In this project, I developed a quaternion-based orientation tracking pipeline that fuses gyroscope motion models with accelerometer observation models. I formulated the trajectory estimation as a <strong>constrained least-squares optimization problem</strong> on the Riemannian manifold of unit quaternions.
                     </p>
                     <p>
-                      Using <strong>projected gradient descent</strong>, I optimized the orientation over the entire trajectory, enforcing the unit-norm constraint at every step. This approach significantly reduced drift, achieving a <strong>[Insert Yaw %] reduction in Yaw RMSE</strong> and <strong>[Insert Roll/Pitch %] improvement in Roll/Pitch accuracy</strong> compared to raw IMU integration.
+                      Using <strong>projected gradient descent</strong>, I optimized the orientation over the entire trajectory, enforcing the unit-norm constraint at every step. This approach significantly reduced drift, achieving a <strong>>80% improvement in Roll/Pitch accuracy</strong> compared to raw IMU integration.
                     </p>
                   </td>
                 </tr>
