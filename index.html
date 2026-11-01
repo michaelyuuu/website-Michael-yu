@@ -34,33 +34,33 @@
 <body>
   <nav class="side-nav" aria-label="Primary navigation">
     <ul>
-      <li><a href="#featured" class="nav-link active">Featured</a></li>
-      <li><a href="#projects" class="nav-link">Engineering</a></li>
+      <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#built" class="nav-link">Built</a></li>
+      <li><a href="#zero-to-one" class="nav-link">Process</a></li>
+      <li><a href="#leadership" class="nav-link">Leadership</a></li>
       <li><a href="#research" class="nav-link">Research</a></li>
-      <li><a href="#experience" class="nav-link">Leadership</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
   <div class="container">
 
-    <header class="header" id="home">
+    <header class="header" id="about">
       <div class="header-content">
         <p class="hero-kicker">ROBOTICS · EMBODIED AI · AUTONOMOUS SYSTEMS</p>
         <h1 class="name">Cheng-Han Yu</h1>
-        <p class="hero-headline">Building Intelligent Physical Systems.</p>
-        <p class="hero-intro">
-          I’m a robotics builder and M.S. student at UC San Diego, focused on turning complex ideas into working physical systems. My experience spans autonomous mobile robots, robotic manipulation, control systems, and electric racecar development.
-        </p>
-        <p class="hero-support">
-          From robot perception and motion to hardware integration and vehicle dynamics, I work across disciplines to make real systems perform.
-        </p>
+        <p class="hero-headline">I build things that don’t exist yet.</p>
+        <p class="hero-intro">I’m a robotics builder who loves turning ambitious ideas into working machines. My background spans robotics, AI, mechanical engineering, and autonomous systems. I enjoy tackling difficult problems, learning whatever is necessary, and moving quickly from an idea to something that works in the real world.</p>
+        <p class="hero-support">I’ve led an 80+ member Formula Student racing team, developed autonomous robotic systems, and worked across hardware, software, and early-stage product development. I’m pursuing my M.S. at UC San Diego, with a particular interest in Embodied AI and intelligent machines that solve real-world problems.</p>
+        <p class="hero-support">I like working with ambitious people who care more about building than talking about building.</p>
         <div class="links">
-          <a href="https://github.com/michaelyuuu">GitHub</a>
-          <a href="https://www.linkedin.com/in/cheng-han-yu0968/">LinkedIn</a>
+          <a href="#built">Things I’ve Built</a>
+          <a href="https://github.com/michaelyuuu" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/cheng-han-yu0968/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="data/Cheng Han Yu_Resume_robotics.pdf">Resume</a>
           <a href="mailto:chy084@ucsd.edu">Contact</a>
         </div>
-        <p class="availability">UC San Diego · M.S. Mechanical &amp; Aerospace Engineering · Graduate Student Researcher</p>
+        <p class="availability">M.S. Mechanical &amp; Aerospace Engineering · UC San Diego</p>
       </div>
       <div class="header-image">
         <img decoding="async" alt="Portrait of Cheng-Han Yu" src="images/ChengHanYu.jpg">
@@ -77,11 +77,11 @@
       <img src="images/robotics1.webp" alt="A 4-DOF robotic arm performing a Tower of Hanoi move" fetchpriority="high" decoding="async">
     </section>
 
-    <section id="featured">
+    <section id="built">
       <div class="section-heading">
-        <p class="section-eyebrow">RESEARCH &amp; ROBOT LEARNING</p>
-        <h2>Featured Robotics</h2>
-        <p>Integrating surgical robotic tools with a mobile humanoid platform.</p>
+        <p class="section-eyebrow">SELECTED BUILDS</p>
+        <h2>Things I’ve Built</h2>
+        <p>Robots, autonomous systems, and the engineering behind them.</p>
       </div>
       <div class="card interactive-card featured-project-card" onclick="openModal('dvrkModal')" tabindex="0" role="button" aria-label="Open dVRK Tool Integration details" onkeydown="handleCardKeyPress(event, 'dvrkModal')">
         <div class="card-content">
@@ -101,11 +101,11 @@
     <section id="projects">
       <div class="section-heading">
         <p class="section-eyebrow">SYSTEMS, CONTROL &amp; ENGINEERING</p>
-        <h2>Engineering Portfolio</h2>
-        <p>Selected work, organized by the capabilities and systems built.</p>
+        <h2>Autonomy, Controls &amp; Mechanical Systems</h2>
+        <p>Public projects, ordered around the systems and capabilities they demonstrate.</p>
       </div>
       <div class="recent-projects-heading">
-        <h3 class="project-group-title">Recent Robotics Projects</h3>
+        <h3 class="project-group-title">Autonomous Systems &amp; Robot Learning</h3>
         <p>New work in mobile manipulation, state estimation, planning, and control.</p>
       </div>
       <div class="repo-grid"><article class="repo-card">
@@ -262,38 +262,17 @@
 
 
 
-    <section id="research">
-      <div class="section-heading">
-        <p class="section-eyebrow">RESEARCH</p>
-        <h2>Research &amp; Publications</h2>
-        <p>Research spanning robot integration and micro-scale mechanical systems.</p>
-      </div>
-      <div class="card interactive-card" onclick="openModal('icssModal')" tabindex="0" role="button" aria-label="Open CMOS-MEMS Resonators research details" onkeydown="handleCardKeyPress(event, 'icssModal')">
-        <div class="card-media">
-          <img src="images/nonlinear2.png" alt="MEMS nonlinearity base" loading="lazy">
-          <img class="top" src="images/nonlinear1.png" alt="MEMS nonlinearity overlay" loading="lazy">
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">
-            Nonlinearity Modification of CMOS-MEMS Resonators
-            <span class="interactive-badge">Click Details</span>
-          </h3>
-          <div class="card-subtitle">
-            <strong>Cheng-Han Yu</strong>, Zhi-Qiang Lee, Meng-Hsuan Tien, Ming-Huang Li*<br>
-            <em>Conference publication</em>, 2024
-          </div>
-          <div class="card-links" style="font-size: 0.9rem; margin-bottom: 12px;">
-            <a href="data/ICSS_YU_Ver_simp.pdf" target="_blank" onclick="event.stopPropagation();">Project Paper</a>
-          </div>
-          <p class="card-desc">
-            Investigated methods to enhance the power handling of CMOS-MEMS resonators by mitigating amplitude-to-phase modulation (AM-PM) noise. Designed and fabricated modified cantilever and fixed-fixed beams utilizing TSMC 0.35 µm CMOS processes to control geometric and capacitive nonlinearities.
-          </p>
-        </div>
+    <section id="zero-to-one" class="zero-section">
+      <div class="section-heading"><p class="section-eyebrow">HOW I BUILD</p><h2>From problem to working system.</h2><p>I like owning the full loop: make the problem concrete, build the system, then learn from what happens.</p></div>
+      <div class="zero-grid">
+        <article><span>01</span><h3>Make it concrete</h3><p>Turn a task into a measurable robotics problem, from mobile manipulation to state estimation.</p></article>
+        <article><span>02</span><h3>Build the whole loop</h3><p>Connect perception, planning, control, and the physical system instead of treating them as isolated parts.</p></article>
+        <article><span>03</span><h3>Learn from what breaks</h3><p>Use simulation, repeated trials, and clear evidence to understand trade-offs and improve the next version.</p></article>
       </div>
     </section>
 
-        <section id="experience">
-      <h2>Leadership &amp; Entrepreneurship</h2>
+    <section id="leadership">
+      <div class="section-heading"><p class="section-eyebrow">TEAM, EXECUTION &amp; PARTNERSHIPS</p><h2>Leadership &amp; Entrepreneurship</h2><p>Building the team and partnerships behind ambitious engineering work.</p></div>
 
       <div class="card interactive-card" onclick="openModal('captainModal')" tabindex="0" role="button" aria-label="Open Team Leader experience details" onkeydown="handleCardKeyPress(event, 'captainModal')">
         <div class="experience-logo">
@@ -320,6 +299,45 @@
           </p>
         </div>
       </div>
+    </section>
+
+    <section id="research">
+      <div class="section-heading">
+        <p class="section-eyebrow">RESEARCH &amp; ENGINEERING</p>
+        <h2>Research &amp; Engineering</h2>
+        <p>Research spanning robot integration and micro-scale mechanical systems.</p>
+      </div>
+      <div class="card interactive-card" onclick="openModal('icssModal')" tabindex="0" role="button" aria-label="Open CMOS-MEMS Resonators research details" onkeydown="handleCardKeyPress(event, 'icssModal')">
+        <div class="card-media">
+          <img src="images/nonlinear2.png" alt="MEMS nonlinearity base" loading="lazy">
+          <img class="top" src="images/nonlinear1.png" alt="MEMS nonlinearity overlay" loading="lazy">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">
+            Nonlinearity Modification of CMOS-MEMS Resonators
+            <span class="interactive-badge">Click Details</span>
+          </h3>
+          <div class="card-subtitle">
+            <strong>Cheng-Han Yu</strong>, Zhi-Qiang Lee, Meng-Hsuan Tien, Ming-Huang Li*<br>
+            <em>Conference publication</em>, 2024
+          </div>
+          <div class="card-links" style="font-size: 0.9rem; margin-bottom: 12px;">
+            <a href="data/ICSS_YU_Ver_simp.pdf" target="_blank" onclick="event.stopPropagation();">Project Paper</a>
+          </div>
+          <p class="card-desc">
+            Investigated methods to enhance the power handling of CMOS-MEMS resonators by mitigating amplitude-to-phase modulation (AM-PM) noise. Designed and fabricated modified cantilever and fixed-fixed beams utilizing TSMC 0.35 µm CMOS processes to control geometric and capacitive nonlinearities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+        
+
+    <section id="contact" class="contact-section">
+      <p class="section-eyebrow">CONTACT</p>
+      <h2>Have a hard problem worth building for?</h2>
+      <p>I’m glad to connect with builders, engineers, founders, and researchers working on intelligent physical systems.</p>
+      <div class="links"><a href="mailto:chy084@ucsd.edu">Email me</a><a href="https://www.linkedin.com/in/cheng-han-yu0968/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/michaelyuuu" target="_blank" rel="noopener noreferrer">GitHub</a></div>
     </section>
 
     <footer class="footer">

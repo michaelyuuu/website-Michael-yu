@@ -18,7 +18,7 @@
         });
       }, observerOptions);
 
-      document.querySelectorAll('section[id]').forEach((section) => {
+      document.querySelectorAll('section[id], header[id]').forEach((section) => {
         observer.observe(section);
       });
 
