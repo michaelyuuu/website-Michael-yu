@@ -599,3 +599,13 @@ section { scroll-margin-top:100px; }
  .zero-grid { grid-template-columns:1fr; gap:14px; }
  .zero-section { margin-top:52px; padding:25px 0; }
 }
+
+
+/* OnCare and mobile robotics feature */
+.oncare-section { margin:64px 0 72px; }
+.oncare-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:stretch; }
+.oncare-story { padding:26px; border:1px solid #e5e2db; border-radius:8px; background:#f2f0ea; }
+.oncare-story h3 { margin:14px 0 12px; font-size:1.45rem; letter-spacing:-.035em; }
+.oncare-story p:last-child { color:#5e5b56; line-height:1.75; }
+.oncare-grid .repo-card { height:100%; }
+@media (max-width:768px) { .oncare-grid { grid-template-columns:1fr; } .oncare-story { padding:21px; } }
