@@ -622,3 +622,13 @@ section { scroll-margin-top:100px; }
 .robot-feature-media span { position:absolute; right:10px; bottom:10px; padding:5px 8px; background:rgba(20,20,20,.75); border-radius:3px; color:#fff; font-size:.7rem; }
 .robot-feature-copy { padding:22px 26px 26px; }
 @media (max-width:768px) { .oncare-grid { grid-template-columns:1fr; } .oncare-story { padding:22px; } .robot-feature-copy { padding:20px 22px 22px; } }
+
+/* MAE-204 mobile manipulation videos */
+.simulation-demos { margin:30px 0 42px; }
+.simulation-video-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.simulation-video-card { margin:0; overflow:hidden; border:1px solid #e5e2db; border-radius:8px; background:#fff; }
+.simulation-video-card video { display:block; width:100%; aspect-ratio:16 / 9; object-fit:cover; background:#e8e7e3; }
+.simulation-video-card figcaption { display:flex; flex-direction:column; gap:4px; padding:13px 16px 15px; }
+.simulation-video-card figcaption strong { color:#171717; font-size:.93rem; }
+.simulation-video-card figcaption span { color:#68645c; font-size:.82rem; line-height:1.45; }
+@media (max-width:768px) { .simulation-video-grid { grid-template-columns:1fr; gap:14px; } }
