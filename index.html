@@ -80,28 +80,29 @@
 
     <section id="oncare" class="oncare-section">
       <div class="section-heading">
-        <p class="section-eyebrow">ONCARE · MOBILE ROBOTICS</p>
-        <h2>Connecting care workflows to a mobile robot.</h2>
-        <p>OnCare explores a practical product loop: connect residents, families, care staff, and a robot through one coordinated experience.</p>
+        <p class="section-eyebrow">ONCARE × ONTARU · CARE ROBOTICS</p>
+        <h2>A care platform connected to a mobile robot.</h2>
+        <p>One product challenge across two builds: design the care workflow, then build the robot platform it could run on.</p>
       </div>
       <div class="oncare-grid">
         <article class="oncare-story">
-          <p class="repo-card-meta">PRODUCT · FAMILY-TO-ROBOT CARE</p>
-          <h3>From family connection to staff-approved action.</h3>
-          <p>Built a carehouse platform with a resident kiosk, family app, and staff console. Families can schedule visits or request approved items; residents confirm, staff review, and the robot workflow tracks delivery.</p>
-          <p>Shaped by conversations with about 30 care facilities in the U.S. and Japan. The software demo currently uses a simulated robot; attended, end-to-end validation on the physical mobile platform is still in progress.</p>
+          <p class="repo-card-meta">ONCARE · CARE WORKFLOW SOFTWARE</p>
+          <h3>Connect residents, families, and care teams.</h3>
+          <p>Built a resident iPad kiosk, family app, and staff console for family visits and care requests. Resident consent and staff approval stay explicit, with request status tied to system evidence.</p>
+          <p>Product discovery included conversations with about 30 care facilities across the U.S. and Japan. The end-to-end software demo has been exercised with simulated services; a live care-facility pilot has not been validated.</p>
         </article>
-        <article class="repo-card">
-        <a class="repo-card-media" href="https://github.com/michaelyuuu/MAE-204_Mobile-Robot-Simulator" target="_blank" rel="noopener noreferrer" aria-label="Open Mobile Manipulation Simulator repository">
-          <img src="images/projects/mobile-manipulation.png" alt="Mobile Manipulation Simulator project result" loading="lazy" decoding="async">
-        </a>
-        <div class="repo-card-content">
-          <p class="repo-card-meta">MAE 204 · Mobile manipulation</p>
-          <h4>Mobile Manipulation Simulator</h4>
-          <p>Simulated pick-and-place with a four-wheel mobile base and 5-DOF arm. A task-space PI controller tracks an SE(3) end-effector trajectory through the combined chassis-and-arm Jacobian.</p>
-          <a class="repo-link" href="https://github.com/michaelyuuu/MAE-204_Mobile-Robot-Simulator" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
+        <article class="robot-feature">
+          <div class="robot-feature-media">
+            <img src="images/projects/ontaru-mobile-manipulator.webp" alt="Concept render of the Ontaru dual-arm mobile manipulator with a lift and mobile base" loading="lazy" decoding="async">
+            <span>Platform design render</span>
+          </div>
+          <div class="robot-feature-copy">
+            <p class="repo-card-meta">ONTARU · DUAL-ARM MOBILE MANIPULATOR</p>
+            <h3>The physical platform behind the product direction.</h3>
+            <p>Integrated a holonomic mobile base, lifting column, and two robot arms. Built the ROS 2 mobile stack, SLAM/Nav2 integration, browser-based operation, and dual-arm teleoperation; real-hardware leader–follower teleoperation has been verified.</p>
+            <p>OnCare’s robot gateway has been tested with a simulated robot. Attended navigation and care-task execution on the physical platform remain to be validated.</p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -137,6 +138,17 @@
         <p>New work in mobile manipulation, state estimation, planning, and control.</p>
       </div>
       <div class="repo-grid">
+        <article class="repo-card">
+        <a class="repo-card-media" href="https://github.com/michaelyuuu/MAE-204_Mobile-Robot-Simulator" target="_blank" rel="noopener noreferrer" aria-label="Open Mobile Manipulation Simulator repository">
+          <img src="images/projects/mobile-manipulation.png" alt="Mobile Manipulation Simulator project result" loading="lazy" decoding="async">
+        </a>
+        <div class="repo-card-content">
+          <p class="repo-card-meta">MAE 204 · Mobile manipulation</p>
+          <h4>Mobile Manipulation Simulator</h4>
+          <p>Simulated pick-and-place with a four-wheel mobile base and 5-DOF arm. A task-space PI controller tracks an SE(3) end-effector trajectory through the combined chassis-and-arm Jacobian.</p>
+          <a class="repo-link" href="https://github.com/michaelyuuu/MAE-204_Mobile-Robot-Simulator" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
 <article class="repo-card">
         <a class="repo-card-media" href="https://github.com/michaelyuuu/ECE-276A_Visual-Inertial-SLAM" target="_blank" rel="noopener noreferrer" aria-label="Open Visual-Inertial SLAM with a Joint EKF repository">
           <img src="images/projects/visual-inertial-slam.png" alt="Visual-Inertial SLAM with a Joint EKF project result" loading="lazy" decoding="async">

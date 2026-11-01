@@ -609,3 +609,16 @@ section { scroll-margin-top:100px; }
 .oncare-story p:last-child { color:#5e5b56; line-height:1.75; }
 .oncare-grid .repo-card { height:100%; }
 @media (max-width:768px) { .oncare-grid { grid-template-columns:1fr; } .oncare-story { padding:21px; } }
+
+
+/* OnCare product + Ontaru platform feature */
+.oncare-grid { grid-template-columns:1fr 1fr; align-items:stretch; gap:22px; }
+.oncare-story, .robot-feature { overflow:hidden; border:1px solid #e5e2db; border-radius:8px; background:#fff; }
+.oncare-story { padding:28px; background:#f2f0ea; }
+.oncare-story h3, .robot-feature h3 { margin:12px 0; font-size:1.35rem; line-height:1.25; letter-spacing:-.035em; }
+.oncare-story p:not(.repo-card-meta), .robot-feature-copy p:not(.repo-card-meta) { color:#5e5b56; font-size:.92rem; line-height:1.7; }
+.robot-feature-media { position:relative; background:#d8d5ce; aspect-ratio:4 / 3; overflow:hidden; }
+.robot-feature-media img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 45%; }
+.robot-feature-media span { position:absolute; right:10px; bottom:10px; padding:5px 8px; background:rgba(20,20,20,.75); border-radius:3px; color:#fff; font-size:.7rem; }
+.robot-feature-copy { padding:22px 26px 26px; }
+@media (max-width:768px) { .oncare-grid { grid-template-columns:1fr; } .oncare-story { padding:22px; } .robot-feature-copy { padding:20px 22px 22px; } }
