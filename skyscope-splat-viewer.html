@@ -48,6 +48,7 @@
       viewer.start();
       viewer.controls.minDistance = narrow ? 225 : 165;
       viewer.controls.maxDistance = narrow ? 450 : 360;
+      viewer.controls.maxPolarAngle = THREE.MathUtils.degToRad(75);
       window.addEventListener('message', (event) => {
         if (event.origin !== location.origin || event.source !== window.parent || event.data?.type !== 'skyscope-reset') return;
         viewer.controls.reset();

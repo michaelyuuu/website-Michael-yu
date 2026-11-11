@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive 3D and thermal visualization for aerial inspection."><link rel="canonical" href="https://michaelyuuu.github.io/website-Michael-yu/projects/drone-imaging.html"><title>Drone Imaging: SkyScope | Cheng-Han Yu</title><link rel="stylesheet" href="../stylesheet.css"><link rel="stylesheet" href="project.css"></head>
-<body><main class="project-page"><a class="project-back" href="../index.html#skyscope">← Back to portfolio</a><header class="project-hero"><p class="section-eyebrow">SKYSCOPE / SCOPEC · DRONE IMAGING</p><h1>Making aerial inspection data explorable</h1><p class="project-lede">A browser-based 3D viewer brings reconstructed geometry, RGB imagery, and thermal data into an inspection workflow.</p><p class="project-meta">Drone imaging · 3D reconstruction · Thermal visualization · Interactive viewer</p></header>
+<meta name="description" content="Interactive 3D and thermal visualization for aerial inspection."><link rel="canonical" href="https://michaelyuuu.github.io/website-Michael-yu/projects/drone-imaging.html"><title>Drone Imaging: SkyScope | Cheng-Han Yu</title><link rel="stylesheet" href="../stylesheet.css?v=20261111-drone-demo"><link rel="stylesheet" href="project.css"></head>
+<body><main class="project-page"><a class="project-back" href="../index.html#skyscope">← Back to portfolio</a><header class="project-hero"><p class="section-eyebrow">SKYSCOPE / SCOPEC · DRONE IMAGING</p><h1>Making aerial inspection data explorable</h1><p class="project-lede">I built browser tools for exploring reconstructed buildings and reviewing aligned RGB and thermal drone imagery.</p><p class="project-meta">Drone imaging · 3D reconstruction · Thermal visualization · Interactive viewer</p></header>
 <section class="project-section skyscope-section skyscope-detail">      <div class="skyscope-story">
         <div class="skyscope-copy">
           <p class="repo-card-meta">MY CONTRIBUTION</p>
           <h3>From raw outputs to a usable view</h3>
-          <p>I developed the SkyScope browser viewer for importing and inspecting 3D models, aligning image layers, and comparing RGB and thermal views across capture times. I also organized reconstruction and fusion results into a clear demonstration and checked thermal-camera specifications and pricing with a supplier for the prototype.</p>
-          <p>The wider inspection concept connected 3D pre-inspection, flight planning, infrared capture, analysis, and reporting. The reconstruction pipeline and business plan were team efforts; the interactive viewer and its revisions are the part I can directly trace to my own commits.</p>
+          <p>I developed the SkyScope browser viewer for importing and inspecting 3D models, aligning image layers, and comparing RGB and thermal views across capture times. I also built a drone orthomosaic review tool: users can swipe between aligned RGB and thermal maps, open matching closeups, mark suspected defects, record severity and notes, and export annotations as GeoJSON.</p>
+          <p>The wider inspection concept connected 3D pre-inspection, flight planning, infrared capture, analysis, and reporting. The reconstruction pipeline and business plan were team efforts; both browser tools and their revisions are directly traceable to my commits.</p>
           <div class="skyscope-steps" aria-label="Inspection workflow">
             <span>Aerial capture</span><span>3D reconstruction</span><span>RGB + thermal fusion</span><span>Interactive inspection</span>
           </div>
@@ -19,6 +19,20 @@
       </div>
       <div class="skyscope-demo-heading">
         <div>
+          <p class="repo-card-meta">WORKING INSPECTION TOOL</p>
+          <h3>Review RGB and thermal aerial imagery</h3>
+          <p>This recorded demo shows the orthomosaic review tool I built for comparing aligned aerial views and recording inspection observations.</p>
+        </div>
+      </div>
+      <figure class="skyscope-video-card skyscope-video-card--featured">
+        <video controls playsinline preload="none" poster="../media/skyscope/ortho-annotation-poster.jpg" aria-label="Recorded RGB and thermal orthomosaic comparison with manual defect annotations">
+          <source src="../media/skyscope/ortho-annotation-demo.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+        <figcaption><strong>RGB + thermal inspection tool</strong><span>Swipe between aligned aerial images, inspect matching closeups, and mark suspected defects with notes and severity. Thermal colors show relative contrast, not absolute temperature.</span></figcaption>
+      </figure>
+      <div class="skyscope-demo-heading">
+        <div>
           <p class="repo-card-meta">INTERACTIVE 3D RESULT</p>
           <h3>Explore a building reconstruction</h3>
           <p>Drag to rotate, scroll or pinch to zoom. This retained thermal-color reconstruction shows the building and its surroundings in 3D.</p>
@@ -28,7 +42,7 @@
         </div>
       </div>
       <div class="skyscope-viewer-shell">
-        <iframe id="skyscope-model" src="../skyscope-splat-viewer.html?v=6" title="Interactive thermal-color 3D reconstruction of a building from SkyScope project data" loading="lazy" allow="fullscreen"></iframe>
+        <iframe id="skyscope-model" src="../skyscope-splat-viewer.html?v=7" title="Interactive thermal-color 3D reconstruction of a building from SkyScope project data" loading="lazy" allow="fullscreen"></iframe>
         <p id="skyscope-model-status" class="skyscope-status" role="status" aria-live="polite">Thermal-color building reconstruction · drag to rotate</p>
       </div>
       <div class="skyscope-video-grid" aria-label="Project interface demonstrations">
