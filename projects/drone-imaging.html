@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive 3D and thermal visualization for aerial inspection."><link rel="canonical" href="https://michaelyuuu.github.io/website-Michael-yu/projects/drone-imaging.html"><title>Drone Imaging: SkyScope | Cheng-Han Yu</title><link rel="stylesheet" href="../stylesheet.css?v=20261111-drone-context"><link rel="stylesheet" href="project.css"></head>
+<meta name="description" content="Interactive 3D and thermal visualization for aerial inspection."><link rel="canonical" href="https://michaelyuuu.github.io/website-Michael-yu/projects/drone-imaging.html"><title>Drone Imaging: SkyScope | Cheng-Han Yu</title><link rel="stylesheet" href="../stylesheet.css?v=20261111-drone-roofpair"><link rel="stylesheet" href="project.css"></head>
 <body><main class="project-page"><a class="project-back" href="../index.html#skyscope">← Back to portfolio</a><header class="project-hero"><p class="section-eyebrow">SKYSCOPE / SCOPEC · DRONE IMAGING</p><h1>Making aerial inspection data explorable</h1><p class="project-lede">I built browser tools for exploring reconstructed buildings and reviewing aligned RGB and thermal drone imagery.</p><p class="project-meta">Drone imaging · 3D reconstruction · Thermal visualization · Interactive viewer</p></header>
 <section class="project-section skyscope-section skyscope-detail">      <div class="skyscope-story">
         <div class="skyscope-copy">
@@ -32,6 +32,26 @@
       </figure>
       <div class="skyscope-demo-heading">
         <div>
+          <p class="repo-card-meta">SAME BUILDING · TWO IMAGE TYPES</p>
+          <h3>Roof detail in RGB and thermal</h3>
+          <p>A roof section from the original RGB orthomosaic is shown beside a retained drone thermal closeup at roughly the same scale.</p>
+        </div>
+      </div>
+      <div class="skyscope-roof-pair" aria-label="Approximate RGB and thermal roof comparison">
+        <figure>
+          <svg viewBox="2018 1320 644 515" role="img" aria-label="RGB roof region cropped from the full aerial orthomosaic, showing the roof seam and adjacent road">
+            <image href="../media/skyscope/aerial-orthomosaic-full.png" width="3776" height="3568" />
+          </svg>
+          <figcaption><strong>RGB orthomosaic crop</strong><span>Detail from the full-resolution aerial map</span></figcaption>
+        </figure>
+        <figure>
+          <img src="../media/skyscope/thermal-roof-closeup-apr07.png" alt="Drone thermal closeup of the same roof area, showing the roof seam and adjacent road in a purple-orange palette" loading="lazy" decoding="async">
+          <figcaption><strong>Thermal drone closeup</strong><span>April 7, 2026 · false-color thermal image</span></figcaption>
+        </figure>
+      </div>
+      <p class="skyscope-roof-pair-note">The RGB view is cropped from a stitched orthomosaic, not an individual camera photo. The two views show approximately the same area from different captures; this is a visual comparison, not pixel-level alignment or a temperature measurement.</p>
+      <div class="skyscope-demo-heading">
+        <div>
           <p class="repo-card-meta">WORKING INSPECTION TOOL</p>
           <h3>Review RGB and thermal aerial imagery</h3>
           <p>This recorded demo shows the orthomosaic review tool I built for comparing aligned aerial views and recording inspection observations.</p>
@@ -48,28 +68,13 @@
         <div>
           <p class="repo-card-meta">FLIGHT TO INSPECTION</p>
           <h3>From an aerial route to a usable view</h3>
-          <p>The overhead route concept gives context for how drone imagery is collected before viewing the inspection and reconstruction results.</p>
+          <p>Camera GPS positions from an April 7 DJI thermal capture show the actual overhead scan pattern before the reconstruction results.</p>
         </div>
       </div>
       <div class="skyscope-video-grid" aria-label="Flight and inspection context">
         <figure class="skyscope-video-card">
-          <div class="skyscope-route-plan" role="img" aria-label="Animated top-down concept of a drone scanning a building in parallel passes">
-            <svg viewBox="0 0 640 360" aria-hidden="true">
-              <defs><pattern id="route-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#dce4e1" stroke-width="1"/></pattern></defs>
-              <rect width="640" height="360" fill="#edf2ef"/><rect width="640" height="360" fill="url(#route-grid)"/>
-              <path d="M0 55H640M0 311H640" stroke="#c8d1ce" stroke-width="34"/>
-              <rect x="180" y="67" width="280" height="226" rx="8" fill="#9eacab" stroke="#607d79" stroke-width="4"/>
-              <path d="M230 69V291M320 69V291M410 69V291" stroke="#d4dcda" stroke-width="2"/>
-              <rect x="281" y="167" width="78" height="30" rx="4" fill="#6f8984"/>
-              <text x="320" y="186" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">ROOF</text>
-              <path id="route-path" d="M116 88H516V141H116V194H516V247H116" fill="none" stroke="#b85820" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="116" cy="88" r="9" fill="#165a5c" stroke="#fff" stroke-width="3"/><circle cx="116" cy="247" r="9" fill="#b85820" stroke="#fff" stroke-width="3"/>
-              <text x="95" y="72" fill="#164e4f" font-size="13" font-weight="800">START</text><text x="87" y="277" fill="#954a20" font-size="13" font-weight="800">END</text>
-              <g class="skyscope-route-drone"><circle r="18" fill="#142f39" stroke="#fff" stroke-width="3"/><path d="M-9 0H9M0-7V7M-13-9h5m16 0h5m-26 18h5m16 0h5" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><animateMotion dur="12s" repeatCount="indefinite" path="M116 88H516V141H116V194H516V247H116"/></g>
-              <text x="576" y="48" fill="#2d4d4c" font-size="15" font-weight="800">N ↑</text>
-            </svg>
-          </div>
-          <figcaption><strong>Overhead route concept</strong><span>Illustrative scan passes from the project pitch, shown from above. This is a flight-planning concept, not a logged autonomous flight.</span></figcaption>
+          <div class="skyscope-route-plan"><img src="../media/skyscope/drone-capture-track-apr07.svg" alt="Top-down plot of 285 actual geotagged DJI thermal camera positions, joined in capture order; north points right" loading="lazy"></div>
+          <figcaption><strong>Actual camera capture positions</strong><span>285 geotagged frames recorded over 6 minutes on April 7, 2026. Lines connect photo positions in time order; they do not show continuous flight telemetry or verified autonomy. <a href="../media/skyscope/drone-capture-positions-apr07.geojson" download>Download GPS positions (GeoJSON)</a></span></figcaption>
         </figure>
         <figure class="skyscope-video-card">
           <video controls playsinline preload="none" poster="../media/skyscope/thermal-viewer-poster.jpg" aria-label="SkyScope 3D building viewer with a temperature filter">
