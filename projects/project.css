@@ -29,3 +29,13 @@
 .project-footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:52px;padding-top:22px;border-top:1px solid #dce6e1;font-size:.9rem}
 .project-footer a{font-weight:700;text-decoration:none}
 @media(max-width:700px){.project-page{padding:25px 17px 62px}.project-intro-grid,.project-gallery,.project-video-grid{grid-template-columns:1fr}.project-gallery .project-visual:first-child:last-child,.project-video-grid .project-visual:first-child{grid-column:auto}.project-panel{padding:19px}.project-visual img,.project-visual video{max-height:420px}}
+
+.humanoid-detail .robot-feature { display:grid; grid-template-columns:1fr 1fr; }
+.humanoid-detail .robot-feature-media { min-height:300px; }
+.humanoid-detail .startup-story-heading { margin:20px 0 16px; }
+.skyscope-detail { margin-top:18px; padding-top:0; }
+.oncare-detail .oncare-story { max-width:860px; }
+.care-role-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.care-role-grid .project-panel h3 { margin:0 0 9px; color:#102c38; font-size:1.05rem; }
+@media(max-width:700px) { .humanoid-detail .robot-feature { grid-template-columns:1fr; } .humanoid-detail .robot-feature-media { min-height:0; } }
+@media(max-width:700px) { .care-role-grid { grid-template-columns:1fr; } }
