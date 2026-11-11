@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <title>Cheng-Han Yu | Robotics &amp; Embodied AI Builder</title>
-  <link rel="stylesheet" href="stylesheet.css?v=20261111-skyscope">
+  <link rel="stylesheet" href="stylesheet.css?v=20261111-skyscope-3">
 </head>
 
 <body>
@@ -175,19 +175,15 @@
         <div>
           <p class="repo-card-meta">INTERACTIVE 3D RESULT</p>
           <h3>Explore a building reconstruction</h3>
-          <p>Drag to rotate, scroll or pinch to zoom. Switch to an early thermal-colored mesh sample to see another retained experiment.</p>
+          <p>Drag to rotate, scroll or pinch to zoom. This retained thermal-color reconstruction shows the building and its surroundings in 3D.</p>
         </div>
         <div class="skyscope-controls" role="group" aria-label="3D model controls">
-          <button type="button" class="skyscope-mode is-active" data-skyscope-model="building" aria-pressed="true">3D scene</button>
-          <button type="button" class="skyscope-mode" data-skyscope-model="thermal" aria-pressed="false">Thermal prototype</button>
           <button type="button" class="skyscope-reset" id="skyscope-reset">Reset view</button>
         </div>
       </div>
       <div class="skyscope-viewer-shell">
-        <model-viewer id="skyscope-model" src="media/skyscope/building-reconstruction.glb" alt="Interactive building scene reconstructed from project imagery" camera-controls camera-orbit="35deg 65deg 150%" shadow-intensity="0.25" exposure="1.2" loading="lazy" interaction-prompt="auto" touch-action="pan-y">
-          <div class="skyscope-loading" slot="poster">Loading 3D model…</div>
-        </model-viewer>
-        <p id="skyscope-model-status" class="skyscope-status" role="status" aria-live="polite">Building reconstruction · drag to rotate</p>
+        <iframe id="skyscope-model" src="skyscope-splat-viewer.html?v=4" title="Interactive thermal-color 3D reconstruction of a building from SkyScope project data" loading="lazy" allow="fullscreen"></iframe>
+        <p id="skyscope-model-status" class="skyscope-status" role="status" aria-live="polite">Thermal-color building reconstruction · drag to rotate</p>
       </div>
       <div class="skyscope-video-grid" aria-label="Project interface demonstrations">
         <figure class="skyscope-video-card">
@@ -206,14 +202,10 @@
         </figure>
       </div>
       <div class="skyscope-after-demo">
-        <figure class="skyscope-fusion">
-          <img src="media/skyscope/rgb-thermal-fusion.jpg" alt="Overview of RGB and thermal fusion with a reconstructed 3D scene" loading="lazy" decoding="async">
-          <figcaption>RGB and thermal fusion overview from the project outputs</figcaption>
-        </figure>
         <div class="skyscope-note">
           <h3>What this represents</h3>
           <p>This is an interactive 3D scene reconstruction with thermal visualization: a foundation for spatial inspection and a digital-twin prototype. It is not a predictive AI world model; no learned dynamics or future-state simulation are shown here.</p>
-          <p>The interactive building scene and thermal mesh are separate retained experiments, not aligned views of one site. The thermal mesh’s rough geometry reflects the early prototype. Original geometry and imagery are preserved separately.</p>
+          <p>The interactive scene is a Gaussian-splat reconstruction from a retained thermal project capture. It shows visualized inspection data, not a measured or validated digital twin. Original geometry and imagery are preserved separately.</p>
         </div>
       </div>
     </section>
@@ -833,8 +825,7 @@
       </div>
     </div>
   </div>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
-  <script src="scripts/skyscope-viewer.js?v=20261111-skyscope" defer></script>
+  <script src="scripts/skyscope-viewer.js?v=20261111-skyscope-4" defer></script>
   <script src="scripts/main.js?v=20261111-field-story" defer></script>
 </body>
 </html>

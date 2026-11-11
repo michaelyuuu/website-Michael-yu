@@ -651,15 +651,15 @@ section { scroll-margin-top:100px; }
 .skyscope-section { margin:70px 0 76px; padding-top:8px; }
 .skyscope-section .section-heading { max-width:780px; }
 .skyscope-story { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:stretch; }
-.skyscope-copy, .skyscope-image, .skyscope-viewer-shell, .skyscope-fusion, .skyscope-note { border:1px solid #e5e2db; border-radius:8px; overflow:hidden; background:#fff; }
+.skyscope-copy, .skyscope-image, .skyscope-viewer-shell, .skyscope-note { border:1px solid #e5e2db; border-radius:8px; overflow:hidden; background:#fff; }
 .skyscope-copy { padding:28px; }
 .skyscope-copy h3, .skyscope-demo-heading h3, .skyscope-note h3 { margin:8px 0 14px; font-size:1.45rem; line-height:1.25; letter-spacing:-.035em; }
 .skyscope-copy > p:not(.repo-card-meta), .skyscope-demo-heading p:not(.repo-card-meta), .skyscope-note p { color:#5e5b56; font-size:.92rem; line-height:1.72; }
 .skyscope-steps { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
 .skyscope-steps span { padding:7px 9px; border:1px solid #ddd9d0; border-radius:4px; color:#504c45; font-size:.76rem; }
-.skyscope-image, .skyscope-fusion { margin:0; }
+.skyscope-image { margin:0; }
 .skyscope-image img { display:block; width:100%; height:100%; min-height:360px; max-height:440px; object-fit:cover; }
-.skyscope-image figcaption, .skyscope-fusion figcaption { padding:11px 14px; color:#68645c; font-size:.76rem; }
+.skyscope-image figcaption { padding:11px 14px; color:#68645c; font-size:.76rem; }
 .skyscope-demo-heading { display:flex; justify-content:space-between; align-items:end; gap:22px; margin:38px 0 14px; }
 .skyscope-demo-heading h3 { margin-bottom:7px; }
 .skyscope-demo-heading p:last-child { margin:0; }
@@ -677,13 +677,12 @@ section { scroll-margin-top:100px; }
 .skyscope-video-card figcaption { display:flex; flex-direction:column; gap:4px; padding:14px 16px 16px; }
 .skyscope-video-card figcaption strong { color:#171717; font-size:.93rem; }
 .skyscope-video-card figcaption span { color:#68645c; font-size:.82rem; line-height:1.5; }
-.skyscope-after-demo { display:grid; grid-template-columns:1.15fr .85fr; gap:20px; margin-top:20px; }
-.skyscope-fusion img { display:block; width:100%; height:250px; object-fit:contain; background:#f5f4f0; }
+.skyscope-after-demo { margin-top:20px; }
 .skyscope-note { padding:24px; background:#f2f0ea; }
 .skyscope-note h3 { margin-top:0; }
 @media (max-width:768px) {
   .skyscope-section { margin:52px 0 60px; }
-  .skyscope-story, .skyscope-after-demo { grid-template-columns:1fr; }
+  .skyscope-story { grid-template-columns:1fr; }
   .skyscope-video-grid { grid-template-columns:minmax(0,1fr); }
   .skyscope-copy, .skyscope-note { padding:22px; }
   .skyscope-image img { min-height:0; height:260px; }
