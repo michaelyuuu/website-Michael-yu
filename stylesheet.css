@@ -703,3 +703,6 @@ section { scroll-margin-top:100px; }
 .project-card .card-content { display: flex; flex-direction: column; align-items: flex-start; }
 .project-card-cta { color: var(--primary-color); font-size: .9rem; font-weight: 700; margin-top: 14px; }
 #research .project-card .card-media img[src^="https://robostore.com"] { object-position: center 40%; }
+
+.research-lab-link { margin: -8px 0 26px; padding: 0 4px; color: #5e5b56; font-size: .9rem; }
+.research-lab-link a { color: var(--primary-color); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
