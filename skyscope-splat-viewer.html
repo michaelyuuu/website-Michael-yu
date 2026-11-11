@@ -25,13 +25,14 @@
 
     const loading = document.getElementById('loading');
     const report = (type) => window.parent.postMessage({ type }, location.origin);
+    const narrow = window.innerWidth < 600;
 
     try {
       const viewer = new GaussianSplats3D.Viewer({
         rootElement: document.getElementById('stage'),
         cameraUp: [0, 1, 0],
-        initialCameraPosition: [70, 60, 130],
-        initialCameraLookAt: [9, 0, -8],
+        initialCameraPosition: narrow ? [115, 104, 239] : [88, 75, 175],
+        initialCameraLookAt: [9, -8, -8],
         sharedMemoryForWorkers: false,
         sphericalHarmonicsDegree: 2,
         useBuiltInControls: true
@@ -45,6 +46,8 @@
         scale: [1.41, 1.41, 1.41]
       });
       viewer.start();
+      viewer.controls.minDistance = narrow ? 225 : 165;
+      viewer.controls.maxDistance = narrow ? 450 : 360;
       window.addEventListener('message', (event) => {
         if (event.origin !== location.origin || event.source !== window.parent || event.data?.type !== 'skyscope-reset') return;
         viewer.controls.reset();
