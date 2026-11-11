@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <title>Cheng-Han Yu | Robotics &amp; Embodied AI Builder</title>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css?v=20261111-skyscope">
 </head>
 
 <body>
@@ -36,6 +36,7 @@
     <ul>
       <li><a href="#about" class="nav-link active">About</a></li>
       <li><a href="#oncare" class="nav-link">Latest Work</a></li>
+      <li><a href="#skyscope" class="nav-link">Drone Imaging</a></li>
       <li><a href="#built" class="nav-link">Built</a></li>
       <li><a href="#zero-to-one" class="nav-link">Process</a></li>
       <li><a href="#leadership" class="nav-link">Leadership</a></li>
@@ -146,6 +147,74 @@
           </video>
           <figcaption><strong>05 / First-person operator view</strong><span>Camera feedback, drive and head controls, and an emergency stop in one interface.</span></figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section id="skyscope" class="skyscope-section" aria-labelledby="skyscope-title">
+      <div class="section-heading">
+        <p class="section-eyebrow">SKYSCOPE / SCOPEC · DRONE IMAGING</p>
+        <h2 id="skyscope-title">Making aerial inspection data explorable.</h2>
+        <p>I built the web-based 3D viewer that brings reconstructed geometry, RGB imagery, and thermal data into an interactive inspection workflow.</p>
+      </div>
+      <div class="skyscope-story">
+        <div class="skyscope-copy">
+          <p class="repo-card-meta">MY CONTRIBUTION</p>
+          <h3>From raw outputs to a usable view</h3>
+          <p>I developed the SkyScope browser viewer for importing and inspecting 3D models, aligning image layers, and comparing RGB and thermal views across capture times. I also organized reconstruction and fusion results into a clear demonstration and checked thermal-camera specifications and pricing with a supplier for the prototype.</p>
+          <p>The wider inspection concept connected 3D pre-inspection, flight planning, infrared capture, analysis, and reporting. The reconstruction pipeline and business plan were team efforts; the interactive viewer and its revisions are the part I can directly trace to my own commits.</p>
+          <div class="skyscope-steps" aria-label="Inspection workflow">
+            <span>Aerial capture</span><span>3D reconstruction</span><span>RGB + thermal fusion</span><span>Interactive inspection</span>
+          </div>
+        </div>
+        <figure class="skyscope-image">
+          <img src="media/skyscope/aerial-orthomosaic.jpg" alt="Orthomosaic generated from aerial images of a building" loading="lazy" decoding="async">
+          <figcaption>Aerial orthomosaic from the project data</figcaption>
+        </figure>
+      </div>
+      <div class="skyscope-demo-heading">
+        <div>
+          <p class="repo-card-meta">INTERACTIVE 3D RESULT</p>
+          <h3>Explore a building reconstruction</h3>
+          <p>Drag to rotate, scroll or pinch to zoom. Switch to an early thermal-colored mesh sample to see another retained experiment.</p>
+        </div>
+        <div class="skyscope-controls" role="group" aria-label="3D model controls">
+          <button type="button" class="skyscope-mode is-active" data-skyscope-model="building" aria-pressed="true">3D scene</button>
+          <button type="button" class="skyscope-mode" data-skyscope-model="thermal" aria-pressed="false">Thermal prototype</button>
+          <button type="button" class="skyscope-reset" id="skyscope-reset">Reset view</button>
+        </div>
+      </div>
+      <div class="skyscope-viewer-shell">
+        <model-viewer id="skyscope-model" src="media/skyscope/building-reconstruction.glb" alt="Interactive building scene reconstructed from project imagery" camera-controls camera-orbit="35deg 65deg 150%" shadow-intensity="0.25" exposure="1.2" loading="lazy" interaction-prompt="auto" touch-action="pan-y">
+          <div class="skyscope-loading" slot="poster">Loading 3D model…</div>
+        </model-viewer>
+        <p id="skyscope-model-status" class="skyscope-status" role="status" aria-live="polite">Building reconstruction · drag to rotate</p>
+      </div>
+      <div class="skyscope-video-grid" aria-label="Project interface demonstrations">
+        <figure class="skyscope-video-card">
+          <video controls playsinline preload="none" poster="media/skyscope/thermal-viewer-poster.jpg" aria-label="SkyScope 3D building viewer with a temperature filter">
+            <source src="media/skyscope/thermal-viewer-demo.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+          <figcaption><strong>Thermal inspection interface</strong><span>A recorded prototype demonstrates temperature filtering and building-level inspection in 3D.</span></figcaption>
+        </figure>
+        <figure class="skyscope-video-card">
+          <video controls playsinline preload="none" poster="media/skyscope/flight-path-poster.jpg" aria-label="Animated concept of a drone inspection route around a 3D building">
+            <source src="media/skyscope/flight-path-concept.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+          <figcaption><strong>Autonomous route concept</strong><span>A trajectory visualization from the project pitch; it illustrates the intended flight-planning workflow, not a verified autonomous field flight.</span></figcaption>
+        </figure>
+      </div>
+      <div class="skyscope-after-demo">
+        <figure class="skyscope-fusion">
+          <img src="media/skyscope/rgb-thermal-fusion.jpg" alt="Overview of RGB and thermal fusion with a reconstructed 3D scene" loading="lazy" decoding="async">
+          <figcaption>RGB and thermal fusion overview from the project outputs</figcaption>
+        </figure>
+        <div class="skyscope-note">
+          <h3>What this represents</h3>
+          <p>This is an interactive 3D scene reconstruction with thermal visualization: a foundation for spatial inspection and a digital-twin prototype. It is not a predictive AI world model; no learned dynamics or future-state simulation are shown here.</p>
+          <p>The interactive building scene and thermal mesh are separate retained experiments, not aligned views of one site. The thermal mesh’s rough geometry reflects the early prototype. Original geometry and imagery are preserved separately.</p>
+        </div>
       </div>
     </section>
 
@@ -764,6 +833,8 @@
       </div>
     </div>
   </div>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
+  <script src="scripts/skyscope-viewer.js?v=20261111-skyscope" defer></script>
   <script src="scripts/main.js?v=20261111-field-story" defer></script>
 </body>
 </html>
