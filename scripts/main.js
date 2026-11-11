@@ -1,26 +1,23 @@
 // ===== SECTION SCROLL OBSERVER =====
     window.addEventListener('DOMContentLoaded', () => {
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-      };
+      const navLinks = [...document.querySelectorAll('.side-nav a.nav-link')];
+      const navSections = [...document.querySelectorAll('section[id], header[id]')]
+        .filter(section => navLinks.some(link => link.getAttribute('href') === `#${section.id}`));
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          const id = entry.target.getAttribute('id');
-          const navLink = document.querySelector(`.side-nav a[href="#${id}"]`);
-
-          if (entry.isIntersecting) {
-            document.querySelectorAll('.side-nav a.nav-link').forEach(link => link.classList.remove('active'));
-            if (navLink) navLink.classList.add('active');
-          }
+      function updateActiveNav() {
+        const readingLine = window.scrollY + Math.min(window.innerHeight * 0.3, 220);
+        let activeSection = navSections[0];
+        for (const section of navSections) {
+          if (section.offsetTop <= readingLine) activeSection = section;
+        }
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${activeSection?.id}`);
         });
-      }, observerOptions);
+      }
 
-      document.querySelectorAll('section[id], header[id]').forEach((section) => {
-        observer.observe(section);
-      });
+      window.addEventListener('scroll', updateActiveNav, { passive: true });
+      window.addEventListener('resize', updateActiveNav);
+      updateActiveNav();
 
       // ===== SMOOTH SCROLL FOR NAVIGATION LINKS =====
       document.querySelectorAll('.side-nav a[href^="#"]').forEach(anchor => {
@@ -40,7 +37,7 @@
             });
 
             // Update active state
-            document.querySelectorAll('.side-nav a.nav-link').forEach(link => link.classList.remove('active'));
+            navLinks.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
           }
         });
