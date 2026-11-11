@@ -23,6 +23,21 @@
 .project-section{margin:44px 0}.project-section>p{max-width:740px;margin:0 0 18px}
 .project-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
 .project-gallery .project-visual{margin:0}.project-gallery .project-visual:first-child:last-child{grid-column:1/-1}
+.project-gallery .planning-architecture{grid-column:1/-1}
+.planning-flow{padding:30px;background:#f5f9fb;color:#173443}
+.planning-flow__intro{margin:0 0 20px;color:#216369;font-size:.9rem;font-weight:800;letter-spacing:.1em}
+.planning-flow__steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.planning-flow__step{position:relative;min-width:0;min-height:176px;padding:20px 18px;border:1px solid #cbdedb;border-radius:14px;background:#fff}
+.planning-flow__step:not(:last-child)::after{content:"→";position:absolute;z-index:1;top:50%;right:-22px;transform:translateY(-50%);color:#1f6b70;font-size:1.5rem;font-weight:800}
+.planning-flow__number{display:inline-block;margin-bottom:14px;color:#207174;font-size:.9rem;font-weight:800;letter-spacing:.08em}
+.planning-flow__step h3{margin:0 0 9px;color:#173443;font-size:1.16rem;line-height:1.2}
+.planning-flow__step p{margin:0;color:#4b626c;font-size:1rem;line-height:1.5}
+.planning-flow__result{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:20px;padding:20px 22px;border-radius:14px;background:#dff0ea}
+.planning-flow__result-label{color:#1d6865;font-size:.8rem;font-weight:800;letter-spacing:.1em}
+.planning-flow__result strong{color:#173d3d;font-size:1.18rem}
+.planning-flow__result p{flex-basis:100%;margin:0;color:#496466;font-size:1rem;line-height:1.5}
+@media(max-width:900px){.planning-flow__steps{grid-template-columns:1fr;gap:20px}.planning-flow__step{min-height:0}.planning-flow__step:not(:last-child)::after{content:"↓";top:auto;right:auto;bottom:-24px;left:50%;transform:translateX(-50%)}}
+@media(max-width:700px){.planning-flow{padding:20px}.planning-flow__step{padding:18px}.planning-flow__result{padding:18px}}
 .project-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
 .project-video-grid .project-visual{margin:0}.project-video-grid .project-visual:first-child{grid-column:1/-1}
 .project-video-grid video{aspect-ratio:16/9;max-height:540px;object-fit:contain;background:#111}
