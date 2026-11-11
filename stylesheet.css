@@ -663,7 +663,7 @@ section { scroll-margin-top:100px; }
 .skyscope-detail .skyscope-story { grid-template-columns:minmax(0,1fr); }
 .skyscope-detail .skyscope-copy { padding:28px 30px; }
 .skyscope-ortho-showcase { margin:20px 0 0; overflow:hidden; border:1px solid #e5e2db; border-radius:8px; background:#fff; }
-.skyscope-ortho-visuals { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(260px,.75fr); }
+.skyscope-ortho-visuals { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(320px,1fr); }
 .skyscope-ortho-main { position:relative; display:grid; place-items:center; min-height:430px; padding:22px; background:#151a1e; }
 .skyscope-ortho-main img { display:block; width:100%; max-height:530px; object-fit:contain; }
 .skyscope-ortho-focus { position:absolute; left:40%; top:41%; width:29%; height:25%; border:2px solid #ffbd60; border-radius:3px; box-shadow:0 0 0 999px #0000, 0 0 18px #0009; pointer-events:none; }
@@ -671,7 +671,7 @@ section { scroll-margin-top:100px; }
 .skyscope-ortho-flight { display:flex; align-items:center; gap:12px; color:#8b551d; }
 .skyscope-ortho-flight svg { width:52px; height:40px; flex:none; }
 .skyscope-ortho-flight span { font-size:.69rem; font-weight:800; letter-spacing:.08em; line-height:1.4; }
-.skyscope-ortho-detail { aspect-ratio:1.15; border:4px solid #fff; border-radius:5px; background:#151a1e url('media/skyscope/aerial-orthomosaic.jpg') 60% 51% / 265% auto no-repeat; box-shadow:0 5px 17px #1d202724; }
+.skyscope-ortho-detail { aspect-ratio:1.15; border:4px solid #fff; border-radius:5px; background:#151a1e url('media/skyscope/aerial-orthomosaic-full.png') 60% 51% / 340% auto no-repeat; box-shadow:0 5px 17px #1d202724; }
 .skyscope-ortho-side p { margin:0; color:#5e5b56; font-size:.8rem; line-height:1.5; }
 .skyscope-ortho-showcase figcaption { padding:11px 16px; color:#68645c; font-size:.76rem; }
 .skyscope-demo-heading { display:flex; justify-content:space-between; align-items:end; gap:22px; margin:38px 0 14px; }
@@ -689,6 +689,9 @@ section { scroll-margin-top:100px; }
 .skyscope-video-card { min-width:0; margin:0; overflow:hidden; border:1px solid #e5e2db; border-radius:8px; background:#fff; }
 .skyscope-video-card--featured { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr); align-items:center; }
 .skyscope-video-card video { display:block; width:100%; aspect-ratio:16 / 9; object-fit:contain; background:#1d2027; }
+.skyscope-route-plan { aspect-ratio:16 / 9; overflow:hidden; background:#edf2ef; }
+.skyscope-route-plan svg { display:block; width:100%; height:100%; }
+@media (prefers-reduced-motion: reduce) { .skyscope-route-drone { display:none; } }
 .skyscope-video-card figcaption { display:flex; flex-direction:column; gap:4px; padding:14px 16px 16px; }
 .skyscope-video-card figcaption strong { color:#171717; font-size:.93rem; }
 .skyscope-video-card figcaption span { color:#68645c; font-size:.82rem; line-height:1.5; }
