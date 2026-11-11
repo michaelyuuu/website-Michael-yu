@@ -517,7 +517,7 @@ section { scroll-margin-top: 88px; }
 .modal-overlay[aria-hidden="true"] { pointer-events: none; }
 .modal-overlay[aria-hidden="false"] { pointer-events: auto; }
 :focus-visible { outline: 3px solid #eb9d3d; outline-offset: 3px; }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .side-nav { display: block; position: sticky; top: 0; right: auto; transform: none; width: 100%; background: rgba(247,248,245,.94); backdrop-filter: blur(12px); border-bottom: 1px solid #e2e9e6; }
   .side-nav ul { display: flex; justify-content: center; gap: 8px; padding: 8px 12px; }
   .side-nav li { margin: 0; text-align: center; }
@@ -611,8 +611,8 @@ section { scroll-margin-top:100px; }
 @media (max-width:768px) { .oncare-grid { grid-template-columns:1fr; } .oncare-story { padding:21px; } }
 
 
-/* OnCare product + Ontaru platform feature */
-.oncare-grid { grid-template-columns:1fr 1fr; align-items:stretch; gap:22px; }
+/* Care software and mobile robot feature */
+.oncare-grid { grid-template-columns:1fr 1fr; align-items:start; gap:22px; }
 .oncare-story, .robot-feature { overflow:hidden; border:1px solid #e5e2db; border-radius:8px; background:#fff; }
 .oncare-story { padding:28px; background:#f2f0ea; }
 .oncare-story h3, .robot-feature h3 { margin:12px 0; font-size:1.35rem; line-height:1.25; letter-spacing:-.035em; }
@@ -622,6 +622,15 @@ section { scroll-margin-top:100px; }
 .robot-feature-media span { position:absolute; right:10px; bottom:10px; padding:5px 8px; background:rgba(20,20,20,.75); border-radius:3px; color:#fff; font-size:.7rem; }
 .robot-feature-copy { padding:22px 26px 26px; }
 @media (max-width:768px) { .oncare-grid { grid-template-columns:1fr; } .oncare-story { padding:22px; } .robot-feature-copy { padding:20px 22px 22px; } }
+
+/* Field demonstrations */
+.startup-clips { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:22px; }
+.startup-clip { margin:0; min-width:0; overflow:hidden; border:1px solid #e5e2db; border-radius:8px; background:#fff; }
+.startup-clip video { display:block; width:100%; height:280px; object-fit:contain; background:#171717; }
+.startup-clip figcaption { display:flex; flex-direction:column; gap:4px; padding:14px 16px 16px; }
+.startup-clip figcaption strong { color:#171717; font-size:.93rem; }
+.startup-clip figcaption span { color:#68645c; font-size:.82rem; line-height:1.45; }
+@media (max-width:768px) { .startup-clips { grid-template-columns:1fr; gap:14px; } .startup-clip video { height:250px; } }
 
 /* MAE-204 mobile manipulation videos */
 .simulation-demos { margin:30px 0 42px; }

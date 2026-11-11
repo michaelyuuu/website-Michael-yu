@@ -35,7 +35,7 @@
   <nav class="side-nav" aria-label="Primary navigation">
     <ul>
       <li><a href="#about" class="nav-link active">About</a></li>
-      <li><a href="#oncare" class="nav-link">OnCare</a></li>
+      <li><a href="#oncare" class="nav-link">Latest Work</a></li>
       <li><a href="#built" class="nav-link">Built</a></li>
       <li><a href="#zero-to-one" class="nav-link">Process</a></li>
       <li><a href="#leadership" class="nav-link">Leadership</a></li>
@@ -80,9 +80,9 @@
 
     <section id="oncare" class="oncare-section">
       <div class="section-heading">
-        <p class="section-eyebrow">ONCARE × ONTARU · CARE ROBOTICS</p>
-        <h2>A care platform connected to a mobile robot.</h2>
-        <p>One product challenge across two builds: design the care workflow, then build the robot platform it could run on.</p>
+        <p class="section-eyebrow">RECENT WORK · CARE ROBOTICS</p>
+        <h2>From care workflow to robot field trials.</h2>
+        <p>I built the software workflow and worked across mechanical integration, navigation, arm control, and on-site testing for a dual-arm mobile robot.</p>
       </div>
       <div class="oncare-grid">
         <article class="oncare-story">
@@ -93,16 +93,32 @@
         </article>
         <article class="robot-feature">
           <div class="robot-feature-media">
-            <img src="images/projects/ontaru-mobile-manipulator.webp" alt="Concept render of the Ontaru dual-arm mobile manipulator with a lift and mobile base" loading="lazy" decoding="async">
-            <span>Platform design render</span>
+            <img src="media/startup-robotics/robot-platform.webp" alt="Dual-arm mobile robot prototype in a care facility corridor" loading="lazy" decoding="async">
+            <span>Physical prototype</span>
           </div>
           <div class="robot-feature-copy">
-            <p class="repo-card-meta">ONTARU · DUAL-ARM MOBILE MANIPULATOR</p>
-            <h3>The physical platform behind the product direction.</h3>
-            <p>Integrated a holonomic mobile base, lifting column, and two robot arms. Built the ROS 2 mobile stack, SLAM/Nav2 integration, browser-based operation, and dual-arm teleoperation; real-hardware leader–follower teleoperation has been verified.</p>
-            <p>OnCare’s robot gateway has been tested with a simulated robot. Attended navigation and care-task execution on the physical platform remain to be validated.</p>
+            <p class="repo-card-meta">HUMANOID ROBOTICS STARTUP · DUAL-ARM MOBILE ROBOT</p>
+            <h3>Build, integrate, then test in the field.</h3>
+            <p>I integrated the mobile platform and two robot arms, worked on navigation and arm control, and tested the physical robot on site. The clips below show corridor mobility and arm movement in a laundry setting.</p>
+            <p>OnCare’s robot gateway has been tested with a simulated robot; the full autonomous care-task workflow remains in development.</p>
           </div>
         </article>
+      </div>
+      <div class="startup-clips" aria-label="Robot field demonstrations">
+        <figure class="startup-clip">
+          <video controls playsinline preload="none" poster="media/startup-robotics/corridor-poster.webp" aria-label="Dual-arm mobile robot moving through a care facility corridor">
+            <source src="media/startup-robotics/corridor-trial.mp4" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+          <figcaption><strong>01 / Corridor trial</strong><span>The physical platform moving through a care facility corridor.</span></figcaption>
+        </figure>
+        <figure class="startup-clip">
+          <video controls playsinline preload="none" poster="media/startup-robotics/laundry-poster.webp" aria-label="Robot arm moving in a laundry environment with the tablet screen obscured">
+            <source src="media/startup-robotics/laundry-arm-demo.mp4" type="video/mp4">
+            Your browser does not support this video.
+          </video>
+          <figcaption><strong>02 / Arm operation</strong><span>An arm demonstration in a laundry setting. The tablet screen is obscured.</span></figcaption>
+        </figure>
       </div>
     </section>
 
